@@ -1,3 +1,7 @@
+#How to run :
+Veuillez lancer npm start dans le dossier Angular-server du dossier backend
+
+
 # MyApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
