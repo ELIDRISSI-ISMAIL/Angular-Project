@@ -1,0 +1,41 @@
+<style>
+  .shopping-cart {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .shopping-cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+
+  .shopping-cart-item img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .shopping-cart-item p {
+    margin: 0;
+  }
+
+  .shopping-cart-item button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+</style>
+
+<div class="shopping-cart">
+  <div class="shopping-cart-item" *ngFor="let item of items">
+    <img [src]="item.imageUrl" alt="">
+    <p>{{ item.name }}</p>
+    <p>Quantity: {{ item.quantity }}</p>
+    <button >+</button>
+    <button >-</button>
+    <button >Remove</button>
+  </div>
+</div>

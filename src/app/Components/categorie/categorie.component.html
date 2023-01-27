@@ -1,0 +1,91 @@
+
+<!--<div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">-->
+<!--  <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">-->
+<!--    <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>-->
+<!--    <span class="fs-4">Sidebar</span>-->
+<!--  </a>-->
+<!--  <hr>-->
+<!--  <ul class="nav nav-pills flex-column mb-auto" *ngFor="let item of categories" (click)="itemclicked(item)">-->
+<!--    <li class="nav-item">-->
+<!--      <a href="#" class="nav-link active" aria-current="page">-->
+<!--        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>-->
+<!--        {{item}}-->
+<!--      </a>-->
+<!--    </li>-->
+
+<!--  </ul>-->
+<!--  <hr>-->
+<!--  <div class="dropdown">-->
+<!--    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">-->
+<!--      <img src="" alt="" width="32" height="32" class="rounded-circle me-2">-->
+<!--      <strong>mdo</strong>-->
+<!--    </a>-->
+<!--    <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">-->
+<!--      <li><a class="dropdown-item" href="#">New project...</a></li>-->
+<!--      <li><a class="dropdown-item" href="#">Settings</a></li>-->
+<!--      <li><a class="dropdown-item" href="#">Profile</a></li>-->
+<!--      <li><hr class="dropdown-divider"></li>-->
+<!--      <li><a class="dropdown-item" href="#">Sign out</a></li>-->
+<!--    </ul>-->
+<!--  </div>-->
+<!--</div>-->
+
+
+<!--<nav class="navbar navbar-expand-lg navbar-light bg-light">-->
+<!--  <a class="navbar-brand" href="#">Navbar</a>-->
+<!--  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--    <span class="navbar-toggler-icon"></span>-->
+<!--  </button>-->
+<!--  <div class="collapse navbar-collapse" id="navbarNav">-->
+<!--    <ul class="navbar-nav"*ngFor="let item of categories" >-->
+<!--      <li class="nav-item">-->
+<!--        <button class="nav-link" (click)="selectCat(item)" >{{item}}</button>-->
+<!--      </li>-->
+<!--    </ul>-->
+<!--  </div>-->
+
+<!--&lt;!&ndash;</nav>&ndash;&gt;-->
+<!--<nav class="navbar navbar-expand-lg navbar-light bg-dark">-->
+<!--  <div class="container-fluid">-->
+<!--    <a class="navbar-brand" href="#">Hello</a>-->
+<!--    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--      <span class="navbar-toggler-icon"></span>-->
+<!--    </button>-->
+<!--    <div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+<!--      <ul class="navbar-nav me-auto mb-3 mb-lg-1">-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link active" aria-current="page"  routerLink="">Home</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link" routerLink="panier">Panier</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link" routerLink="Auth">Authentification</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link" routerLink="categorie">categorie</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link" routerLink="Inscription">S'inscrire</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link" routerLink="test">Test</a>-->
+<!--        </li>-->
+<!--      </ul>-->
+
+<!--    </div>-->
+<!--  </div>-->
+<!-- -->
+<!--</nav> -->
+<div style="margin: 25px; ">
+  <mat-form-field appearance="fill">
+    <mat-label>Categories</mat-label>
+    <mat-select>
+      <mat-option (click)="selectCat(cat)"  *ngFor="let cat of categories" >{{cat}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+
+
+

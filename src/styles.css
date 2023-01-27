@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+/*
+Brightly Orange: #ff1e00
+
+Dimly Blue: #e8f9fd
+
+Alert/Highlight Green: #59ce8f*/
+
+  /*@font-face {*/
+  /*  font-family: eina;*/
+  /*  src: url(assets/fonts/CheGuevaraBarry-Brown.ttf) format("truetype");*/
+  /*}*/
+
+  *{
+  font-family:"Bell MT";
+    font-size: 15px;
+  }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

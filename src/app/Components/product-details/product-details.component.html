@@ -1,0 +1,44 @@
+<section class="product">
+  <div class="product__photo">
+    <div class="photo-container">
+      <div class="photo-main">
+        <div class="controls">
+          <i class="material-icons">share</i>
+          <i class="material-icons">favorite_border</i>
+        </div>
+        <img src="{{product.thumbnail}}" alt="green apple slice">
+      </div>
+      <div class="photo-album">
+        <ul>
+          <li><img src="{{product.images[0]}}" alt="green apple"></li>
+          <li><img src="{{product.images[1]}}" alt="half apple"></li>
+          <li><img src="{{product.images[2]}}" alt="green apple"></li>
+          <li><img src="{{product.images[3]}}" alt="apple top"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="product__info">
+    <div class="title">
+      <h1>{{product.title}}</h1>
+      <span></span>
+    </div>
+    <div class="price">
+       <span>{{product.price}} DH</span>
+    </div>
+
+    <div class="description">
+      <h3>Description</h3>
+      <ul>
+        <li>{{product.brand}}</li>
+        <li><strong>the rating is : </strong>{{product.rating}}</li>
+        <li><strong>the stock is : </strong> {{product.stock}}</li>
+        <li><strong>Description :</strong> {{product.description}}</li>
+      </ul>
+    </div>
+    <button class="buy--btn" (click)="return()">RETURN</button>
+  </div>
+</section>
+
+<footer>
+</footer>

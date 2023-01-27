@@ -1,0 +1,14 @@
+body {
+  background-color: blue; /* Change the background color to dark grey */
+}
+nav a {
+  color: white; /* Change the text color to white */
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+
+}
+nav a:hover {
+  background-color: wheat; /* Change the background color on hover */
+}
+
